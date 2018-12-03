@@ -64,13 +64,13 @@ class BobTest < Minitest::Test
   end
 
   def test_no_letters
-    skip
+    # skip
     remark = "1, 2, 3"
     assert_equal "Whatever.", Bob.hey(remark), %q{Bob hears "1, 2, 3", and..}
   end
 
   def test_question_with_no_letters
-    # skip
+    skip
     remark = "4?"
     assert_equal "Sure.", Bob.hey(remark), %q{Bob hears "4?", and..}
   end
