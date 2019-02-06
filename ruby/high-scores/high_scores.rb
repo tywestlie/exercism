@@ -14,7 +14,9 @@ class HighScores
   end
 
   def personal_top
-    scores.
+    scores.sort do |a,b|
+      -(a <=> b)
+    end
   end
 
 end
